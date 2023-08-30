@@ -10,40 +10,42 @@
 
 <!-- BODY HERE  -->
 <body class="font-nunito">
-    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-100 relative overflow-hidden">
+    <div class="mx-auto  dark:bg-slate-900">  
+    
         <!-- NAVBAR -->
-        <nav class="w-full fixed top-0 bg-white z-10">
+        <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
             <div class="container mx-auto py-5 flex items-center justify-between">
                 <div class="flex items-center gap-1">
                     <img class="object-cover w-8 rounded-full" src="./images/6.png" alt="" />
                     <span class="text-2xl font-bold text-indigo-900">DEIVIRTUAL</span>
                 </div>
                 <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
-                    <li class="hover:text-gray-500"><a href="#">HomePage</a></li>
-                    <li class="hover:text-gray-500"><a href="#">About me</a></li>
-                    <li class="hover:text-gray-500"><a href="#">Services</a></li>
-                    <li class="hover:text-gray-500"><a href="#">Works</a></li>
-                    <li class="hover:text-gray-500"><a href="#">Contact</a></li>
+                    <li class="hover:text-gray-500 dark:text-gray-300"><a href="index.html">HomePage</a></li>
+                    <li class="hover:text-gray-500 dark:text-gray-300"><a href="#about">About me</a></li>
+                    <li class="hover:text-gray-500 dark:text-gray-300"><a href="#services">Services</a></li>
+                    <li class="hover:text-gray-500 dark:text-gray-300"><a href="#portfolio">Works</a></li>
+                    <li class="hover:text-gray-500 dark:text-gray-300"><a href="#contact">Contact</a></li>
                 </ul>
-                <img class="w-8 cursor-pointer" src="./images/moon.jpg" alt="">
+                <img id="moon" class="w-8 cursor-pointer mr-10 " src="./images/moon.jpg" alt="">
                 <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
                     <div class="w-6 h-0.5 bg-black"></div>
                     <div class="w-6 h-0.5 bg-black"></div>
                     <div class="w-6 h-0.5 bg-black"></div>
                 </div>
-                <ul id="menu" class=" hidden bg-indigo-900 absolute top-0 left-0 w-full p-10 rounded-b-3xl text-white space-y-10 text-center">
-                    <li><a href="#">HomePage</a></li>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="menu" class=" hidden bg-indigo-900 dark:bg-gray-900 absolute top-0 left-0 w-full p-10 rounded-b-3xl text-white space-y-10 text-center">
+                    <li><a id="hLink" href="index.html">HomePage</a></li>
+                    <li><a id="hLink" href="#about">About me</a></li>
+                    <li><a id="hLink" href="#services">Services</a></li>
+                    <li><a id="hLink" href="#portfolio">Works</a></li>
+                    <li><a id="hLink" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
         
-            <!-- INTRO CONTENT  -->
+        <!-- INTRO CONTENT  -->
+        <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-100 relative overflow-hidden  dark:bg-slate-900">
             <!-- IMAGE -->
-            <img class="absolute bottom-0 right-0 h-4/6 object-cover lg:left-0 mx-auto" src="./images/bg.jpg" alt="">
+            <img class="flex lg:absolute bottom-0 right-0 h-4/6 object-cover lg:left-0 mx-auto" src="./images/bg.jpg" alt="">
             <!-- CIRCLE  -->
             <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto mt-64 w-big h-big bg-indigo-900 rounded-full -z-10"></div>
             <!-- ANIMATED TEXT  -->
@@ -52,20 +54,18 @@
                 <p id="text" class="text-red-500"></p>
             </div>
             <!-- TEXT  -->
-            <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg shadow-gray-400 absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3">
+            <div class=" lg:flex flex-col gap-5 rounded-md shadow-lg shadow-gray-400 absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3">
                 <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Emmanuel</h1>
                 <p class="text-gray-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatum fugit sapiente excepturi quam neque nemo illo, impedit nesciunt nobis iste! Sequi illo officiis, consequuntur explicabo porro voluptatum nesciunt corporis?
                 </p>
                 <a class="bg-indigo-600 text-white text-xl px-3 py-2 w-fit rounded-md font-semibold" href="#contact">Hire me</a>
             </div>      
-        </div>
-
+        </div> 
 
         <!-- ABOUT ME  -->
-
         <div id="about" class="px-10">
-            <div class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
+            <div class="container mx-auto pt-20 flex flex-col-reverse lg:flex-row items-center gap-20  dark:bg-slate-900">
                 <!-- left  -->
                 <div class="relative">
                     <img class="w-1/4 h-1/4 absolute top-0 left-0" src="./images/5.png" alt="">
@@ -77,8 +77,8 @@
                 <!-- right  -->
                 <div class="my-auto flex flex-col gap-3">
                     <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
-                    <h1 class="text-3xl font-medium">BETTER DESIGN</h1>
-                    <h1 class="text-3xl font-medium">BETTER EXPERIENCE</h1>
+                    <h1 class="text-3xl font-medium dark:text-white">BETTER DESIGN</h1>
+                    <h1 class="text-3xl font-medium dark:text-white">BETTER EXPERIENCE</h1>
                     <p class="text-gray-400">
                         I design and build digital products. I am also a multi-disciplinary maker with over 5 years of experience in wide range of Design desciplines.
                     </p>
@@ -113,28 +113,157 @@
 
         <!-- SERVICES  -->
         <div id="services">
-            <div class="container mx-auto">
+            <div class="container mx-auto pt-20  dark:bg-slate-900">
                 <!-- top  -->
                 <div class="flex flex-col gap-3 items-center">
-                    <h1 class="text-indigo-600 font-bold">SERVICES</h1>
-                    <h1 class="text-3xl">What do I offer</h1>
+                    <h1 class="text-indigo-600 font-bold dark:text-white">SERVICES</h1>
+                    <h1 class="text-3xl dark:text-white">What do I offer</h1>
                     <p class="w-1/2 text-center text-gray-400">
                         expedita nesciunt facere eius a nemo quibusdam minus enim? Iure, fuga suscipit. Repellat corporis facere accusantium quibusdam voluptate!
                     </p>
                 </div>
                 <!-- bottom  -->
-                <div class="flex">
+                <div class="flex flex-wrap justify-between">
                     <!-- CARD  -->
-                    <div >
-                        <img src="./images/3.png" alt="">
-                        <h1>UX / UI Design</h1>
-                        <p>I specialize in creating interactive websites for individuals and small businesses</p>
+                    <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3">
+                        <img class="w-10" src="./images/3.png" alt="">
+                        <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                        <p class="text-gray-400">I specialize in creating interactive websites for individuals and small businesses</p>
+                        <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
                     </div>
+                    <!-- CARD  -->
+                    <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3">
+                        <img class="w-10" src="./images/3.png" alt="">
+                        <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                        <p class="text-gray-400">I specialize in creating interactive websites for individuals and small businesses</p>
+                        <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                    </div>
+                    <!-- CARD  -->
+                    <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3">
+                        <img class="w-10" src="./images/3.png" alt="">
+                        <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                        <p class="text-gray-400">I specialize in creating interactive websites for individuals and small businesses</p>
+                        <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                    </div>
+                    <!-- CARD  -->
+                    <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3">
+                        <img class="w-10" src="./images/3.png" alt="">
+                        <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                        <p class="text-gray-400">I specialize in creating interactive websites for individuals and small businesses</p>
+                        <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                    </div>
+                    <!-- CARD  -->
+                    <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3">
+                        <img class="w-10" src="./images/3.png" alt="">
+                        <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                        <p class="text-gray-400">I specialize in creating interactive websites for individuals and small businesses</p>
+                        <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                    </div>
+                    <!-- CARD  -->
+                    <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3">
+                        <img class="w-10" src="./images/3.png" alt="">
+                        <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                        <p class="text-gray-400">I specialize in creating interactive websites for individuals and small businesses</p>
+                        <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                    </div>
+                   
                 </div>
             </div>
-
         </div>
-    
+
+        <!-- PORTFOLIO  -->
+        <div id="portfolio">
+            <div class="container mx-auto pt-20  dark:bg-slate-900">
+                <!-- top  -->
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="text-indigo-600 font-bold">PORTFOLIO</h1>
+                    <h1 class="text-3xl">WORKS & PROJECTS</h1>
+                    <p class="w-1/2 text-center text-gray-400">
+                        expedita nesciunt facere eius a nemo quibusdam minus enim? Iure, fuga suscipit. Repellat corporis facere accusantium quibusdam voluptate!
+                    </p>
+                </div>
+                <!-- bottom  -->
+                <div class="flex flex-wrap justify-between">
+                    <!-- CARD  -->
+                    <div class="w-full md:w-3/12 lg:h-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1">
+                        <img class="" src="./images/5.png" alt="">
+                        
+                    </div>
+                    <!-- CARD  -->
+                    <div class="w-full md:w-3/12 lg:h-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1">
+                        <img class="" src="./images/5.png" alt="">
+                        
+                    </div>
+                    <!-- CARD  -->
+                    <div class="w-full md:w-3/12 lg:h-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1">
+                        <img class="" src="./images/5.png" alt="">
+                        
+                    </div>
+                    <!-- CARD  -->
+                    <div class="w-full md:w-3/12 lg:h-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1">
+                        <img class="" src="./images/5.png" alt="">
+                        
+                    </div>
+                    <!-- CARD  -->
+                    <div class="w-full md:w-3/12 lg:h-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1">
+                        <img class="" src="./images/5.png" alt="">
+                        
+                    </div>
+                    <!-- CARD  -->
+                    <div class="w-full md:w-3/12 lg:h-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1">
+                        <img class="" src="./images/5.png" alt="">
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT  -->
+        <div id="contact">
+            <div class="container mx-auto w-full md:w-1/2 mb-20 pt-20  dark:bg-slate-900">
+                <!-- TOP  -->
+                <div class="flex flex-col gap-3 items-center">
+                    <h1 class="text-indigo-600 font-bold">CONTACT</h1>
+                    <h1 class="text-3xl">HAVE A QUESTION?</h1>
+                    <p class="w-1/2 text-center text-gray-400">
+                        expedita nesciunt facere eius a nemo quibusdam minus enim? Iure, fuga suscipit. Repellat corporis facere accusantium quibusdam voluptate!
+                    </p>
+                </div>
+                <!-- BOTTOM  -->
+                <form action="" class="mt-5 flex flex-col gap-5 items-center">
+                    <input class="p-2 w-full md:-1/2 ring-1 ring-indigo-300 rounded-sm dark:ring-0 dark:bg-indigo-900 dark:text-white"  type="text" placeholder="Name" />
+                    <input class="p-2 w-full md:-1/2 ring-1 ring-indigo-300 rounded-sm dark:ring-0 dark:bg-indigo-900 dark:text-white" type="email" placeholder="email" />
+                    <textarea class="p-2 w-full md:-1/2 ring-1 ring-indigo-300 rounded-sm dark:ring-0 dark:bg-indigo-900 dark:text-white" name="message" id="" cols="30" rows="10"></textarea>
+                    <button class="w-full bg-indigo-600 text-white font-medium py-2 px-3 rounded-md cursor-pointer">Submit</button>
+                </form>
+            </div>           
+        </div>
+        
+        <!-- FOOTER  -->
+                <div class="w-full bg-gray-800">
+                    <div class="container mx-auto py-5 flex items-center justify-between">
+                        <!-- LEFT  -->
+                        <div class="flex items-center gap-1">
+                            <img class="object-cover w-8 rounded-full" src="./images/6.png" alt="" />
+                            <span class="text-2xl font-bold text-indigo-900">DEIVIRTUAL</span>
+                        </div>
+                        <span class="hidden md:block font-medium text-white">&copy All right reserved 2023. Designed by Emma David</span>
+                        <!-- CENTER  -->
+                        <div class="flex gap-1">
+                            <P></P>
+                        </div>
+                        <!-- RIGHT  -->
+                        <div class="flex gap-2 ">
+                           <img class="w-4 cursor-pointer" src="images/1.png">
+                           <img class="w-4 cursor-pointer" src="images/1.png">
+                           <img class="w-4 cursor-pointer" src="images/1.png">
+                           <img class="w-4 cursor-pointer" src="images/1.png">
+                        </div>
+                    </div>
+                </div>
+        <!-- END OF MAIN CONTAINER -->
+    </div>
     <script src="./app.js"></script>
     <script src="./autotyping.js"></script>
 </body>
